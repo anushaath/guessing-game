@@ -1,7 +1,9 @@
 import string, random
+#--------Random String generator-----
 def id_generator(size):
 	return ''.join(random.choice(string.ascii_uppercase) for _ in range(size))
-	
+#--------------
+
 def guesses(wrd,lmt):
 	no_of_guess=0
 	found=0
@@ -46,10 +48,7 @@ def main():
 			limit=int(input ("Enter the limit of guesses: "))
 			if limit>=1:
 				break
-		while True:
-			x=int(input("\n Enter the size of the word: "))
-			if x>=1 and x<=10:
-				break
+		x=random.randint(2,7)
 		
 		word= id_generator(x)
 		print("\n The size of the string is "+ str(len(word)))
