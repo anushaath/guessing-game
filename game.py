@@ -44,7 +44,11 @@ def guesses(wrd,lmt):
 		#--------------
 		print("The number of characters that are correct but are in the wrong place is "+wrg_pos)
 		print("The number of characters that are correct and are in the correct place is "+corr_pos)
-		
+		if corr_pos == wrd.len():
+			print("\n You've guessed correctly :)")
+			found = 1
+		else:
+			print("\n Wrong Guess :(")
 		
 		
 		
