@@ -8,7 +8,10 @@ def guesses(wrd,lmt):
 	no_of_guess=0
 	found=0
 	while True:
-		guess=input("\n Guess a string in CAPS: ")
+		while True:
+			guess=input("\n Guess a string in CAPS and of the appropriate length: ")
+			if len(guess)==len(wrd):
+				break;
 		no_of_guess= no_of_guess+1
 		corr_pos=0
 		wrg_pos=0
