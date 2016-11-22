@@ -8,7 +8,7 @@ def id_generator(size):
 def guesses(wrd,lmt): 
 	no_of_guess=0 
 	found=0 
-	while no_of_guess<lmt: 
+	while no_of_guess<lmt or found==1: 
 		while True: 
 			guess=input("\n Guess a string in CAPS and of the appropriate length: ") 
 			if len(guess)==len(wrd): 
