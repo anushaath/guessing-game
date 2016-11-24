@@ -1,4 +1,4 @@
-# guessing-game (Python 3)
+# guessing-game (Using Python 3)
 # Strategy
 # The game engine first selects a string of a certain length at random 
 
